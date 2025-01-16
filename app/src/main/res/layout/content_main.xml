@@ -46,14 +46,16 @@
                         android:id="@+id/desc_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/open_navigation_and_introduce" />
+                        android:text="@string/open_navigation_and_introduce"
+                        android:visibility="invisible" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="invisible">
 
                     <fragment
                         android:name="monitor.mobie.hdy.im.fragment.PushSettingFrament"
@@ -66,7 +68,8 @@
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="invisible">
 
 
                     <fragment
@@ -86,7 +89,8 @@
                     android:id="@+id/tab4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="invisible">
 
 
                     <fragment
