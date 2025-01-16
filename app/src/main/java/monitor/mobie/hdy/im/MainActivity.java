@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
         TabHost tabHost = (TabHost) findViewById(R.id.tabhost);
         tabHost.setup();
         tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("小米服务框架", null).setContent(R.id.tab1));
-        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("推送设置", null).setContent(R.id.tab2));
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("通知设置", null).setContent(R.id.tab3));
-        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("更多设置", null).setContent(R.id.tab4));
+//        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("推送设置", null).setContent(R.id.tab2));
+//        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("通知设置", null).setContent(R.id.tab3));
+//        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("更多设置", null).setContent(R.id.tab4));
         if (!isNotificationListenerServiceEnabled(this)) {
             Toast.makeText(this, "请先勾选手机监听器的读取通知栏权限!", Toast.LENGTH_LONG).show();
             return;
