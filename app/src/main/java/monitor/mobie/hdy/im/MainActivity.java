@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         data = getSharedPreferences("data", MODE_MULTI_PROCESS);
         TabHost tabHost = (TabHost) findViewById(R.id.tabhost);
         tabHost.setup();
-        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("介绍", null).setContent(R.id.tab1));
+        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("小米服务框架", null).setContent(R.id.tab1));
         tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("推送设置", null).setContent(R.id.tab2));
         tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("通知设置", null).setContent(R.id.tab3));
         tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("更多设置", null).setContent(R.id.tab4));

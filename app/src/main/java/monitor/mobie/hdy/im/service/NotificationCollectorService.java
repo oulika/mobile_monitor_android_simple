@@ -36,7 +36,7 @@ public class NotificationCollectorService extends NotificationListenerService {
     public void onNotificationPosted(StatusBarNotification sbn) {
         SharedPreferences data = getSharedPreferences("data", Context.MODE_MULTI_PROCESS);
         //亮屏推送
-        boolean light = data.getBoolean("LIGHT", false);
+        boolean light = data.getBoolean("LIGHT", true);
         //是否监听所有的应用
         boolean listenAll = data.getBoolean("listenAll", true);
         //是否开启了自定义应用监听
@@ -55,7 +55,7 @@ public class NotificationCollectorService extends NotificationListenerService {
 
 
         // 预设通知转发
-        boolean PhoneAndMessage = data.getBoolean("PhoneAndMessage",false);
+        boolean PhoneAndMessage = data.getBoolean("PhoneAndMessage",true);
         boolean ChinaTalkAPP = data.getBoolean("ChinaTalkAPP",false);
         boolean ChinaShopAPP = data.getBoolean("ChinaShopAPP",false);
         boolean NewsAPP = data.getBoolean("NewsAPP",false);
