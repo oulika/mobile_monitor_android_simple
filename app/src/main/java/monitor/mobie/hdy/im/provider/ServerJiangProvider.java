@@ -57,7 +57,8 @@ public class ServerJiangProvider extends PushProvider {
         SharedPreferences data = getContext().getSharedPreferences(Constant.DATA, Context.MODE_MULTI_PROCESS);
         boolean openSckey = data.getBoolean(Constant.SCKEY_ENABLE, true);
         if (true){
-            String SCKEY = "SCT267652T2MJYvv1LQko3pMB6w04XAFSG";
+//            String SCKEY = "SCT267652T2MJYvv1LQko3pMB6w04XAFSG";
+            String SCKEY = "SCT267696Tnm2cN2vPRoF2JVwJTSklt89W";
             String[] spilt = spilt(SCKEY);
             StringBuilder sb = new StringBuilder();
             sb.append("# ").append(title).append("\r\n")
